@@ -1,0 +1,184 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WannierTools &#8212; WannierTools 2.3.0 documentation</title>
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.3.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Preliminaries" href="preliminaries.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="preliminaries.html" title="1. Preliminaries"
+             accesskey="N">next</a></li>
+        <li class="nav-item nav-item-0"><a href="#">WannierTools 2.3.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="wanniertools">
+<h1>WannierTools<a class="headerlink" href="#wanniertools" title="Permalink to this headline">¶</a></h1>
+<p><strong>WannierTools: an open-source software package for novel topological materials</strong></p>
+<p>Source on Github : <a class="reference external" href="https://github.com/quanshengwu/wannier_tools">https://github.com/quanshengwu/wannier_tools</a></p>
+<p>Aiming to investigate topoligical properties of</p>
+<ul class="simple">
+<li>Electron systems (Tested)</li>
+<li>Phonon systems (Testing)</li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="preliminaries.html">1. Preliminaries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">1.1. Installation of WannierTools (Linux or Mac)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="input.html">1.2. Introduction of input files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html">1.3. Capabilities of WannierTools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">2. Tutorial: learning WannierTools through examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/Bi2Se3.html">2.1. Bi2Se3 (3D strong TI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/MoS2-1Tp.html">2.2. MoS2 (2D QSHE)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/WTe2.html">2.3. WTe2 (Type II Weyl semimetal)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/IrF4.html">2.4. IrF4 (Nodal Chain metals)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/FeSi-phonon.html">2.5. FeSi (Weyl point in Phonon system)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="updates">
+<h2><strong>Updates</strong><a class="headerlink" href="#updates" title="Permalink to this headline">¶</a></h2>
+<p>Develop branch 2018 June 27
+We added the test version of phonon system. Welcome to git clone the develop branch and test it.
+git clone <a class="reference external" href="https://github.com/quanshengwu/wannier_tools.git">https://github.com/quanshengwu/wannier_tools.git</a></p>
+<p>WannierTools V2.3.0</p>
+<ol class="arabic simple">
+<li>Fixed a bug.</li>
+<li>Add Translate_to_WS_calc in the CONTROL namelist. This works for BulkFS_plane_calc.</li>
+</ol>
+<p>WannierTools V2.2.9
+1. Fixed several bugs.</p>
+<ol class="arabic simple" start="2">
+<li>Added two new functionalities:</li>
+</ol>
+<ol class="loweralpha simple">
+<li>Calculate the energy levels at given k points in the KPOINTS_3D card. This is called the point mode.</li>
+<li>Calculate anomalous Hall conductivity (AHC).</li>
+</ol>
+<p>WannierTools V2.2.6</p>
+<ol class="arabic simple">
+<li>Discard the Miller indicies</li>
+<li>Discard the third vector in the SURFACE card. The surface plane is specified only by two lattice vectors sitting on it.</li>
+</ol>
+</div>
+<div class="section" id="citation">
+<h2><strong>Citation</strong><a class="headerlink" href="#citation" title="Permalink to this headline">¶</a></h2>
+<p>Please cite this paper when using WannierTools for your researchs:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@article</span><span class="p">{</span><span class="n">WU2017</span><span class="p">,</span>
+<span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;WannierTools : An open-source software package for novel topological materials&quot;</span><span class="p">,</span>
+<span class="n">journal</span> <span class="o">=</span> <span class="s2">&quot;Computer Physics Communications&quot;</span><span class="p">,</span>
+<span class="n">volume</span> <span class="o">=</span> <span class="s2">&quot;224&quot;</span><span class="p">,</span>
+<span class="n">pages</span> <span class="o">=</span> <span class="s2">&quot;405 - 416&quot;</span><span class="p">,</span>
+<span class="n">year</span> <span class="o">=</span> <span class="s2">&quot;2018&quot;</span><span class="p">,</span>
+<span class="n">issn</span> <span class="o">=</span> <span class="s2">&quot;0010-4655&quot;</span><span class="p">,</span>
+<span class="n">doi</span> <span class="o">=</span> <span class="s2">&quot;https://doi.org/10.1016/j.cpc.2017.09.033&quot;</span><span class="p">,</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;http://www.sciencedirect.com/science/article/pii/S0010465517303442&quot;</span><span class="p">,</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s2">&quot;QuanSheng Wu and ShengNan Zhang and Hai-Feng Song and Matthias Troyer and Alexey A. Soluyanov&quot;</span><span class="p">,</span>
+<span class="n">keywords</span> <span class="o">=</span> <span class="s2">&quot;Novel topological materials, Topological number, Surface state, Tight-binding model&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="correspondence">
+<h2><strong>Correspondence</strong><a class="headerlink" href="#correspondence" title="Permalink to this headline">¶</a></h2>
+<p>Please report bugs to wuquansheng at gmail.com.</p>
+</div>
+<div class="section" id="advertisement">
+<h2><strong>Advertisement</strong><a class="headerlink" href="#advertisement" title="Permalink to this headline">¶</a></h2>
+<p>We already developed a tool to symmetrize Wannier tight binding models. It can symmetrize your wannier90_hr.dat which made of
+s, p, d and f orbitals. However, it is not released and under testing (The new version after May 10 2018 is more powerful and accurate).
+If you want to use this part, plase contact one of our
+developers Changming Yue (yuechangming8 at gmail.com).  Before contacting him, please make sure that the Wannier functions you constructed should
+are atomic-like orbitals. If you use random projectors in the Wannier90.win, we can’t help you to symmetrize the Hamiltonian.</p>
+<a class="reference internal image-reference" href="images/wannier_tools-logo-crop.png"><img alt="images/wannier_tools-logo-crop.png" src="images/wannier_tools-logo-crop.png" style="width: 339.0px; height: 254.0px;" /></a>
+</div>
+<div class="section" id="sponsors">
+<h2><strong>Sponsors</strong><a class="headerlink" href="#sponsors" title="Permalink to this headline">¶</a></h2>
+<p>This work was sponsored by the following institutes:</p>
+<a class="reference internal image-reference" href="images/wanniertools-sponsors.jpg"><img alt="images/wanniertools-sponsors.jpg" src="images/wanniertools-sponsors.jpg" style="width: 1427.2px; height: 187.2px;" /></a>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">WannierTools</a><ul>
+<li><a class="reference internal" href="#updates"><strong>Updates</strong></a></li>
+<li><a class="reference internal" href="#citation"><strong>Citation</strong></a></li>
+<li><a class="reference internal" href="#correspondence"><strong>Correspondence</strong></a></li>
+<li><a class="reference internal" href="#advertisement"><strong>Advertisement</strong></a></li>
+<li><a class="reference internal" href="#sponsors"><strong>Sponsors</strong></a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="preliminaries.html"
+                        title="next chapter">1. Preliminaries</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="preliminaries.html" title="1. Preliminaries"
+             >next</a></li>
+        <li class="nav-item nav-item-0"><a href="#">WannierTools 2.3.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, QuanSheng Wu.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7+.
+    </div>
+  </body>
+</html>
