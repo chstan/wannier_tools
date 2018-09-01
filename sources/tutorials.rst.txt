@@ -8,3 +8,4 @@ Tutorial: learning WannierTools through examples
    tutorials/MoS2-1Tp
    tutorials/WTe2
    tutorials/IrF4
+   tutorials/FeSi-phonon

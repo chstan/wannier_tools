@@ -6,7 +6,7 @@
   <head>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>1.2. Introduction of input files &#8212; WannierTools 2.3.0 documentation</title>
+    <title>2.2. Introduction of input files &#8212; WannierTools 2.3.0 documentation</title>
     <link rel="stylesheet" href="static/classic.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -24,21 +24,21 @@
     <script type="text/javascript" src="static/doctools.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1.3. Capabilities of WannierTools" href="features.html" />
-    <link rel="prev" title="1.1. Installation of WannierTools (Linux or Mac)" href="installation.html" /> 
+    <link rel="next" title="2.3. Capabilities of WannierTools" href="features.html" />
+    <link rel="prev" title="2.1. Installation of WannierTools (Linux or Mac)" href="installation.html" /> 
   </head>
   <body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="features.html" title="1.3. Capabilities of WannierTools"
+          <a href="features.html" title="2.3. Capabilities of WannierTools"
              accesskey="N">next</a></li>
         <li class="right" >
-          <a href="installation.html" title="1.1. Installation of WannierTools (Linux or Mac)"
+          <a href="installation.html" title="2.1. Installation of WannierTools (Linux or Mac)"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">WannierTools 2.3.0 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="preliminaries.html" accesskey="U">1. Preliminaries</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="preliminaries.html" accesskey="U">2. Preliminaries</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -48,7 +48,7 @@
           <div class="body" role="main">
             
   <div class="section" id="introduction-of-input-files">
-<h1>1.2. Introduction of input files<a class="headerlink" href="#introduction-of-input-files" title="Permalink to this headline">¶</a></h1>
+<h1>2.2. Introduction of input files<a class="headerlink" href="#introduction-of-input-files" title="Permalink to this headline">¶</a></h1>
 <p><strong>Attention:</strong> From WannierTools 2.2, the name of input file changes from ‘input.dat’ to <strong>‘wt.in’</strong>.
 The excutable binary changes from ‘wann_tools’ to <strong>‘wt.x’</strong></p>
 <p>There are two input files you should prepare <a class="reference internal" href="#wt-in"><span class="std std-ref">wt.in</span></a>
@@ -59,7 +59,7 @@ and  <a class="reference internal" href="#wannier90-dat"><span class="std std-re
 <li><a class="reference internal" href="#wannier90-dat"><span class="std std-ref">Tight-binding model wannier90_hr.dat</span></a></li>
 </ul>
 <div class="section" id="main-input-file-wt-in">
-<span id="wt-in"></span><h2>1.2.1. Main input file wt.in<a class="headerlink" href="#main-input-file-wt-in" title="Permalink to this headline">¶</a></h2>
+<span id="wt-in"></span><h2>2.2.1. Main input file wt.in<a class="headerlink" href="#main-input-file-wt-in" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference internal" href="#basic-parameters"><span class="std std-ref">Basic Parameters</span></a></li>
 <li><a class="reference internal" href="#tbfilenamelist"><span class="std std-ref">TB_FILE</span></a></li>
@@ -782,7 +782,7 @@ The default values for this card are atomic positions.</p>
 </div>
 </div>
 <div class="section" id="special-tags-for-phonon-system-under-testing">
-<span id="phonon"></span><h2>1.2.2. Special tags for phonon system (under testing)<a class="headerlink" href="#special-tags-for-phonon-system-under-testing" title="Permalink to this headline">¶</a></h2>
+<span id="phonon"></span><h2>2.2.2. Special tags for phonon system (under testing)<a class="headerlink" href="#special-tags-for-phonon-system-under-testing" title="Permalink to this headline">¶</a></h2>
 <p>Now we have one testing version of phonon system, you can write to <a class="reference external" href="mailto:wuquansheng&#37;&#52;&#48;gmail&#46;com">wuquansheng<span>&#64;</span>gmail<span>&#46;</span>com</a> for testing.
 There are two steps for using WannierTools for phonon system.</p>
 <p>1. Use phonon_hr.py to get the tight-binding Hamiltonian from the FORCE_CONSTANTS or FORCE_SETS which generated with <a class="reference external" href="https://atztogo.github.io/phonopy/">phonopy</a>.
@@ -823,7 +823,7 @@ LOTO_BC   ! Born charge tensor for each type of atom
 </div>
 </div>
 <div class="section" id="tight-binding-model-wannier90-hr-dat">
-<span id="wannier90-dat"></span><h2>1.2.3. Tight-binding model wannier90_hr.dat<a class="headerlink" href="#tight-binding-model-wannier90-hr-dat" title="Permalink to this headline">¶</a></h2>
+<span id="wannier90-dat"></span><h2>2.2.3. Tight-binding model wannier90_hr.dat<a class="headerlink" href="#tight-binding-model-wannier90-hr-dat" title="Permalink to this headline">¶</a></h2>
 <p>This file contains the TB parameters. Usually, it can be generated by <a class="reference external" href="http://wannier.org">Wannier90</a>.</p>
 <p>Of cource, you can generate it from the Slater-Koster method or discretize k.p model onto a cubic lattice.
 The format should like this</p>
@@ -910,8 +910,8 @@ The 4th and 5th column are the band index (Row first). The 6th and 7th are compl
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">1.2. Introduction of input files</a><ul>
-<li><a class="reference internal" href="#main-input-file-wt-in">1.2.1. Main input file wt.in</a><ul>
+<li><a class="reference internal" href="#">2.2. Introduction of input files</a><ul>
+<li><a class="reference internal" href="#main-input-file-wt-in">2.2.1. Main input file wt.in</a><ul>
 <li><a class="reference internal" href="#basic-parameters">Basic Parameters</a></li>
 <li><a class="reference internal" href="#namelists">NAMELISTS</a><ul>
 <li><a class="reference internal" href="#tb-file">TB_FILE</a></li>
@@ -941,21 +941,21 @@ The 4th and 5th column are the band index (Row first). The 6th and 7th are compl
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#special-tags-for-phonon-system-under-testing">1.2.2. Special tags for phonon system (under testing)</a><ul>
+<li><a class="reference internal" href="#special-tags-for-phonon-system-under-testing">2.2.2. Special tags for phonon system (under testing)</a><ul>
 <li><a class="reference internal" href="#lo-to-splitting">LO-TO splitting</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tight-binding-model-wannier90-hr-dat">1.2.3. Tight-binding model wannier90_hr.dat</a></li>
+<li><a class="reference internal" href="#tight-binding-model-wannier90-hr-dat">2.2.3. Tight-binding model wannier90_hr.dat</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="installation.html"
-                        title="previous chapter">1.1. Installation of WannierTools (Linux or Mac)</a></p>
+                        title="previous chapter">2.1. Installation of WannierTools (Linux or Mac)</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="features.html"
-                        title="next chapter">1.3. Capabilities of WannierTools</a></p>
+                        title="next chapter">2.3. Capabilities of WannierTools</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -974,13 +974,13 @@ The 4th and 5th column are the band index (Row first). The 6th and 7th are compl
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="features.html" title="1.3. Capabilities of WannierTools"
+          <a href="features.html" title="2.3. Capabilities of WannierTools"
              >next</a></li>
         <li class="right" >
-          <a href="installation.html" title="1.1. Installation of WannierTools (Linux or Mac)"
+          <a href="installation.html" title="2.1. Installation of WannierTools (Linux or Mac)"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">WannierTools 2.3.0 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="preliminaries.html" >1. Preliminaries</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="preliminaries.html" >2. Preliminaries</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
