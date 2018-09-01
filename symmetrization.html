@@ -6,13 +6,13 @@
   <head>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>&lt;no title&gt; &#8212; WannierTools 2.3.0 documentation</title>
+    <title>2.4. Symmetrization of wannier90_hr.dat &#8212; WannierTools 2.4.0 documentation</title>
     <link rel="stylesheet" href="static/classic.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2.3.0',
+        VERSION:     '2.4.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -37,7 +37,7 @@
         <li class="right" >
           <a href="features.html" title="2.3. Capabilities of WannierTools"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">WannierTools 2.3.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">WannierTools 2.4.0 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="preliminaries.html" accesskey="U">2. Preliminaries</a> &#187;</li> 
       </ul>
     </div>  
@@ -47,14 +47,18 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <p>Here is a brief introduction of the symmetrization functionalities. Basically, wannhr_symm is an independent package based on Python2.7
+  <div class="section" id="symmetrization-of-wannier90-hr-dat">
+<h1>2.4. Symmetrization of wannier90_hr.dat<a class="headerlink" href="#symmetrization-of-wannier90-hr-dat" title="Permalink to this headline">¶</a></h1>
+<p>Here is a brief introduction of the symmetrization functionalities. Basically, wannhr_symm is an independent package based on Python2.7
 written by Changming Yue (<a class="reference external" href="mailto:yuechangming8&#37;&#52;&#48;gmail&#46;com">yuechangming8<span>&#64;</span>gmail<span>&#46;</span>com</a>). Although this package is very useful, its requirement is also very restrict.</p>
 <ol class="arabic simple">
 <li>The Wannier functions must be atomic like, which means there should be very weak hybridization between orbitals. It’s not possible to deal with
 the sp2, sp3 like wannier orbitals.</li>
 <li>At present, it can only take care of the s, p, d, t2g, eg orbitals. p orbitals means all three orbitals ordered with pz, px, py.
 d orbitals are ordered as  “dz2”, “dxz”, “dyz”, “dx2-y2”, “dxy”. Such situation is automatically satisfied with in VASP+Wannier90</li>
+<li>The file name of tight binding Hamiltonian should be ‘wannier90_hr.dat’</li>
 </ol>
+</div>
 
 
           </div>
@@ -91,12 +95,12 @@ d orbitals are ordered as  “dz2”, “dxz”, “dyz”, “dx2-y2”, “dxy
         <li class="right" >
           <a href="features.html" title="2.3. Capabilities of WannierTools"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">WannierTools 2.3.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">WannierTools 2.4.0 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="preliminaries.html" >2. Preliminaries</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2016, QuanSheng Wu.
+        &#169; Copyright 2018, WannierTools Team.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7+.
     </div>
   </body>
