@@ -4,6 +4,16 @@
 
 .. role:: blue
 
+July 9 2019
+**WannierTools V2.4.2**
+1. Write out POSCAR-slab to help user to perform DFT calculations. 
+
+2. Add a new funtion to calculate the projected spin texture for the bulk system with vacuum or without inversion symmetry. 
+   BulkSpintext_calc = T.
+   Add a new CARD called SELECTED_ATOMS to control the projection. 
+
+
+Sep 1 2018
 **WannierTools V2.4.0**
 
 Sep 1 2018
