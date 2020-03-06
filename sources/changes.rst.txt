@@ -4,6 +4,13 @@
 
 .. role:: blue
 
+Dec 9 2019
+**WannierTools V2.5.0**
+1. Add a new function to calculate ordinary magnetoresistance of a nonmagnetic metal or semimetal with given magnetic field. See ref.:
+   Magnetoresistance from Fermi surface topology, ShengNan Zhang, QuanSheng Wu, Yi Liu, and Oleg V. Yazyev, Phys. Rev. B 99, 035142 (2019)
+
+2. Add a new function to calculate unfolded bands from a supercell calculation. 
+
 July 9 2019
 **WannierTools V2.4.2**
 1. Write out POSCAR-slab to help user to perform DFT calculations. 
