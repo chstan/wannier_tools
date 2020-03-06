@@ -26,6 +26,7 @@ Aiming to investigate topoligical properties of
    changes
    preliminaries
    tutorials
+   citations
 
 **Citation**
 ^^^^^^^^^^^^
