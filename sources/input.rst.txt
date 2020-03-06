@@ -65,11 +65,11 @@ Here we introduce the wt.in for Bi2Se3 as an example ::
   
   PROJECTORS
    3 3 3 3 3          ! number of projectors
-  Bi px py pz         ! projectors
-  Bi px py pz
-  Se px py pz
-  Se px py pz
-  Se px py pz
+  Bi pz px py         ! projectors
+  Bi pz px py
+  Se pz px py
+  Se pz px py
+  Se pz px py
   
   SURFACE            ! See doc for details
    1  0  0
@@ -499,8 +499,9 @@ In this card, we set the Wannier projectors for the tight binding. ::
 Here we don’t take into account the spin degeneracy, only consider the orbital part. The name of orbitals should be “s”, “px”, “py”, “pz”, “dxy”, “dxz”, “dyz”, “dx2-y2”, “dz2”. I will add f orbitals latter. The order of the orbitals is very important if you want to analyze the symmetry properties. 
 The default order in Wannier90 is "s", "pz", "px", "py", "dz2", "dxz", "dyz", "dx2-y2", "dxy". You can find the orbital order from wannier90.wout.  
 
+
 .. NOTE::
-   If you don't care about the calculation related to symmetry like mirror chern number. The order or the name is not important. So for the f electrons, please write 7 random orbitals like px or dz2 or what else you want. 
+   If you don't care about the calculation related to symmetry like mirror chern number. The order or the name is not important. So for the f electrons, please write 7 random orbitals like px or dz2 or what else you want. This is important for f orbitals.
 
 
 .. _surface:
@@ -509,21 +510,6 @@ SURFACE
 '''''''
 
 **Attention: from version v2.2.6 on, you can specify a surface with SURFACE card with only two lattice vectors**.
-
-
-MILLER_INDICES CARD
-"""""""""""""""""""
-Miller indices form a notation system in crystallography for planes in crystal (Bravais) lattices. You can find more information from Wikipedia https://en.wikipedia.org/wiki/Miller_index. 
-In WannierTools, you only need to specfiy three integers like ::
-
-   MILLER_INDICES
-   0 0 1
-
-.. NOTE::
-
-   Since this is very confusing, we discard it from version V2.2.6.
-   You should notice that the Miller indices mentioned here are based on three vectors specified in LATTICE card.
-
 
 SURFACE CARD
 """"""""""""
