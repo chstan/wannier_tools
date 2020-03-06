@@ -4,7 +4,6 @@ WannierTools's citations upto March 6 2020
 
 
 [1] Yichul Choi, John W. Villanova, and Kyungwha Park. “Zeeman-splitting-induced topological nodal structure and anomalous Hall conductivity in ZrTe5”. In: PHYSICAL REVIEW B 101.3 (2020). issn: 2469-9950. doi: {10.1103/PhysRevB.
-
 101.035105}.
 
 [2] Chaowei Hu, Kyle N. Gordon, Pengfei Liu, Jinyu Liu, Xiaoqing Zhou, Peipei Hao, Dushyant Narayan, Eve Emmanouilidou, Hongyi Sun, Yuntian Liu, Harlan Brawer, Arthur P. Ramirez, Lei Ding, Huibo Cao, Qihang Liu, Dan Dessau, and
